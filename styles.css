@@ -1,15 +1,20 @@
-*:visited {
+a {
     text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    color: inherit;
 }
 * {
     text-decoration: none;
 }
 body {
-    background-color: black;
+    background: linear-gradient(to right, #000, #3a3a3a);
 }
+
 .inicio p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 #fotoDePerfil {
     width: 7rem;
@@ -34,10 +39,10 @@ body {
 #youtube {
     padding: 1rem;
 
-    color: red;
+    color: rgb(255, 0, 0);
 }
 #tiktok {
-    color: blue;
+    color: rgb(0, 0, 255);
 }
 .produtos {
     margin-top: 2.5rem;
@@ -51,12 +56,19 @@ body {
     border: 1px solid white;
     font-family: arial;
     font-size: 0.9rem;
-    color: black;
-    background-color: gray;
+    color: rgb(0, 0, 0);
+    background-color: rgb(128, 128, 128);
     padding: 1.5rem;
     border-radius: 50px;
     width: 13rem;
-   text-align: center;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.produto:hover {
+    border: 2px solid #000;
+}
+.produto:active {
+    background: rgb(255, 255, 255);
 }
 img {
     border-radius: 15px;
@@ -68,14 +80,6 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transition: 0.5s ease;
-}
-.produto1:active {
-    background-color: white;
-    opacity: 2;
-}
-.produto1:hover {
-    border: 2px solid black;
 }
 .produto2 {
     gap: 20px;
@@ -83,13 +87,6 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transition: 0.5s ease;
-}
-.produto2:active {
-    background-color: white;
-}
-.produto2:hover {
-    border: 2px solid black;
 }
 .produto3 {
     gap: 20px;
@@ -97,11 +94,5 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transition: 0.5s ease;
 }
-.produto3:active {
-    background-color: white;
-}
-.produto3:hover {
-    border: 2px solid black;
-}
+
