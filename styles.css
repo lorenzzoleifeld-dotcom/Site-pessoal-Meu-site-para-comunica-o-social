@@ -1,8 +1,5 @@
-a {
+a, a:visited, a:hover, a:active {
     text-decoration: none;
-    color: inherit;
-}
-a:visited {
     color: inherit;
 }
 body {
@@ -54,10 +51,10 @@ body {
     border: 1px solid white;
     font-family: arial;
     font-size: 0.9rem;
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.45);
+    color: white;
+    background-color: rgba(30, 30, 30, 0.7);
     padding: 1.5rem;
-    border-radius: 50px;
+    border-radius: 33px;
     width: 13rem;
     text-align: center;
     transition: 0.4s ease;
@@ -67,33 +64,19 @@ body {
     transform: scale(1.05) translateY(-4px);
 }
 .produto:active {
+    color: rgba(30, 30, 30, 0.80);
     box-shadow: 0 0 10px rgba(240, 255, 255, 0.50);
-    transform: scale(1.05) translateX(-2px);
+    transform: scale(0.99);
     background: rgba(255, 255, 255, 0.85);
+}
+.produto {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 img {
     border-radius: 15px;
     width: 5rem;
 }
-.produto1 {
-    gap: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.produto2 {
-    gap: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.produto3 {
-    gap: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
